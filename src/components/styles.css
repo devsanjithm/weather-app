@@ -1,0 +1,66 @@
+.placename {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.header {
+  color: rgb(255, 255, 255);
+  margin: 10px 0px 0px 10px;
+  font-size: 45px;
+}
+.otherdetails {
+  display: flex;
+  margin-top: 20px;
+}
+.day {
+  display: flex;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+}
+.flex {
+  position: relative;
+  display: flex;
+  width: 500px;
+  height: 150px;
+  background-color: rgba(221, 227, 238, 0.178);
+  margin-left: 100px;
+  border-radius: 10px;
+  left: 250px;
+  top: 20px;
+}
+.temp {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.imgplace {
+  padding-left: 55px;
+  padding-top: 10px;
+}
+.hum {
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 150px;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 180px;
+}
+.description {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  top: -55px;
+}
