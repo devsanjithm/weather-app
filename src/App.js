@@ -20,10 +20,11 @@ const App = () =>{
       .then(res => res.json())
       .then(result => {
         setData(result)
-        
+        setPlace(data.name);
       });
     }
       fetchData();
+      // eslint-disable-next-line
     }, [lat,long])
 
   const ifclicked=()=>{
@@ -44,6 +45,12 @@ const App = () =>{
       });
   }
 
+  function search(e) {
+    if(e.key === "Enter"){
+      ifclicked();
+    }
+  }
+
   return(
   <div className="bg">
       <p>WEATHER APP</p>
@@ -54,8 +61,9 @@ const App = () =>{
               className="searchTerm" 
               placeholder="enter a city name"
               value={place}
-              onChange={(e)=>setPlace(e.target.value)} />
-              <p type="submit" className="searchButton" onClick={ifclicked}>
+              onChange={(e)=>setPlace(e.target.value)} 
+              onKeyPress={search}/>
+              <p type="submit" className="searchButton">
                 <i className="fa fa-search"></i>
               </p>
             </div>
