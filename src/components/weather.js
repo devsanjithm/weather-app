@@ -21,19 +21,19 @@ const WeatherCard = ({weatherData}) =>{
 
         <div className="otherdetails">
           <div className="imgplace">
-          <img src={val} alt="" className="img"></img>
-          <div className="heading">
-            <p className="temp"> {temp1}&deg;C</p>
-            <p className="description">{weatherData.weather[0].description}</p>
-            </div>
+            <img src={val} alt="" className="img"></img>
+              <div className="heading">
+                <p className="temp"> {temp1}&deg;C</p>
+                <p className="description">{weatherData.weather[0].description}</p>
+              </div>
           </div>
   
-        <div className="flex">
-          <p className="hum">Humidity: {weatherData.main.humidity} %</p>
-          <p className="hum">Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
-          <p className="hum">Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
-          <p className="hum">windspeed: {weatherData.wind.speed}mph</p>
-        </div>
+              <div className="flex">
+                <p className="hum">H : {weatherData.main.humidity} %</p>
+                <p className="hum">SR : {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
+                <p className="hum">SS : {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
+                <p className="hum">WS : {weatherData.wind.speed}mph</p>
+              </div>
         </div>
     </div>
 )

@@ -64,3 +64,83 @@
   font-weight: 600;
   top: -55px;
 }
+
+@media (max-width: 480px) {
+  .placename {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    transform: translate(-3%);
+    padding-left: 0px;
+  }
+
+  .header {
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 0px 10px;
+    font-size: 30px;
+  }
+  .day {
+    display: flex;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .otherdetails {
+    position: relative;
+    left: 35%;
+    transform: translate(-10%);
+    margin-top: 0px;
+  }
+  .imgplace {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .img {
+    width: 250px;
+    height: 250px;
+    margin-top: -70px;
+    position: relative;
+    top: 0%;
+  }
+  .heading {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+  }
+  .temp {
+    color: white;
+    font-size: 35px;
+  }
+  .description {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    top: -55px;
+    left: -20px;
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160%;
+    left: -5%;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 0px;
+    background-color: rgba(221, 227, 238, 0.178);
+  }
+  .hum {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    padding: 3px;
+  }
+}
